@@ -1,36 +1,77 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🍔 Sector Burger — Sri Lankan Fusion Smash Burgers
 
-## Getting Started
+A modern, high-performance web application for **Sector Burger**, an artisanal burger restaurant blending classic smash burger techniques with authentic Sri Lankan spices and flavors (Jaffna chili paste, Seeni Sambol, Kochchi kick, Pol Sambol).
 
-First, run the development server:
+---
+
+## ✨ Features
+
+- **🍔 Signature Fusion Menu**: Interactive showcase featuring signature burgers with custom spice levels (*Nai Miris Level*, *Kochchi Kick*, etc.) and flavor tags.
+- **🛒 Interactive Cart & Drawer**: Full cart management with real-time total calculations, quantity adjustments, slide-over drawer animation, and order checkout flow.
+- **🎨 Custom Design System**: Tailored Sri Lankan spice color tokens (`sector-charcoal`, `sector-cinnamon`, `sector-turmeric`, `sector-kochchi`), glassmorphism, dynamic micro-animations, and responsive 6-tier breakpoints.
+- **📱 Responsive & Mobile-First**: Optimized layout with sleek mobile navigation and zero-scrollbar horizontal scroll strips.
+
+---
+
+## 🛠️ Tech Stack
+
+- **Framework**: [Next.js 16](https://nextjs.org/) (App Router)
+- **UI & Logic**: [React 19](https://react.dev/) & TypeScript
+- **Styling**: [Tailwind CSS v4](https://tailwindcss.com/) with `@tailwindcss/postcss`
+- **Fonts**: [Geist Sans & Geist Mono](https://vercel.com/font)
+
+---
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+Ensure you have **Node.js 18.x** or later installed.
+
+### Installation
+
+1. Clone or navigate to the project directory:
+   ```bash
+   cd sector-burger
+   ```
+
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+
+### Development Server
+
+Run the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) (or your local IP address) in your browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 📁 Project Structure
 
-## Learn More
+```text
+sector-burger/
+├── app/
+│   ├── favicon.ico
+│   ├── globals.css      # Tailwind v4 theme config, custom utilities & animations
+│   ├── layout.tsx       # Root layout & font configurations
+│   └── page.tsx         # Sector Burger home page & interactive cart logic
+├── public/              # Static assets
+├── next.config.ts       # Next.js origin & image pattern settings
+├── package.json         # Project scripts & dependencies
+└── tsconfig.json        # TypeScript configuration
+```
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 📜 Available Scripts
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- `npm run dev` — Launches dev server bound to `0.0.0.0`
+- `npm run build` — Generates optimized production build
+- `npm run start` — Starts production server
+- `npm run lint` — Runs ESLint checks
